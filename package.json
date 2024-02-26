@@ -21,6 +21,7 @@
     "@hapipal/schmervice": "^2.1.0",
     "@hapipal/schwifty": "6.x.x",
     "dayjs": "^1.11.9",
+    "dotenv": "^16.4.5",
     "hapi-auth-jwt2": "10.4.0",
     "joi": "17.x.x",
     "nodemon": "^2.0.20",
