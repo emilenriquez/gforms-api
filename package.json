@@ -1,0 +1,55 @@
+{
+  "name": "gforms-api",
+  "version": "0.0.1",
+  "description": "API for gforms clone",
+  "author": "Emil Enriquez <eenriquez@fullscale.io>",
+  "license": "UNLICENSED",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start-dev": "NODE_ENV=development nodemon server",
+    "start-production": "NODE_ENV=production PORT=3900 nodemon server",
+    "start": "node server",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hapi/boom": "9.x.x",
+    "@hapipal/haute-couture": "4.x.x",
+    "@hapipal/schmervice": "^2.1.0",
+    "@hapipal/schwifty": "6.x.x",
+    "dayjs": "^1.11.9",
+    "hapi-auth-jwt2": "^10.4.0",
+    "joi": "17.x.x",
+    "nodemon": "^2.0.20",
+    "objection": "2.x.x",
+    "pg": "^8.8.0",
+    "pm2": "^5.3.0"
+  },
+  "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-config-hapi": "13.x.x",
+    "@hapi/eslint-plugin-hapi": "4.x.x",
+    "@hapi/glue": "8.x.x",
+    "@hapi/hapi": "21.x.x",
+    "@hapi/hoek": "9.x.x",
+    "@hapi/inert": "6.x.x",
+    "@hapi/lab": "25.x.x",
+    "@hapi/vision": "6.x.x",
+    "@hapipal/confidence": "6.x.x",
+    "@hapipal/hpal": "3.x.x",
+    "@hapipal/hpal-debug": "2.x.x",
+    "@hapipal/toys": "3.x.x",
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.x.x",
+    "exiting": "6.x.x",
+    "hapi-swagger": "14.x.x",
+    "knex": "0.21.x"
+  },
+  "bugs": {
+    "url": "https://github.com/hapipal/examples/issues"
+  },
+  "homepage": "https://github.com/hapipal/examples#readme"
+}
