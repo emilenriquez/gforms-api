@@ -20,10 +20,6 @@ exports.deployment = async ({ start } = {}) => {
     return h.continue;
   });
 
-
-
-
-
   if (start) {
     await Exiting.createManager(server).start();
     server.log(['start'], `Server started at ${server.info.uri}`);
