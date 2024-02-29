@@ -15,22 +15,17 @@ API for a google form clone
   - label
   - admin_id (FK ref User)
 
-* Section
-  - id (PK)
-  - label
-  - form_id (FK ref Form)
-
 * Question
   - id (PK)
   - label
   - form_id (FK ref Form)
-  - section_id (FK ref Section)
+  - section_group *used to identify the groupings of each section*
   - type (Enum: FREETEXT, SINGLE_CHOICE, MULTIPLE_SELECTION)
   - is_required (Boolean)
 
 * Option
   - id (PK)
-  - label
+  - value
   - question_id (FK ref Question)
 
 
