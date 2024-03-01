@@ -28,12 +28,13 @@ API for a google form clone
   - value
   - question_id (FK ref Question)
 
-
-* ACL *(not yet final)*
+* User Response
   - id (PK)
-  - role (admin)
-  - resource
-  - permission
+  - form_id
+  - user_id (FK ref User)
+  - question_id (FK ref Question)
+  - response
+
 
 
 
