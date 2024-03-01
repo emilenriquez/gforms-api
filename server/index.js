@@ -16,6 +16,9 @@ exports.deployment = async ({ start } = {}) => {
     if (request.payload) {
       request.payload = convertObjectKeys(request.payload, toCamelCase);
     }
+    if (request.query) {
+      request.query = convertObjectKeys(request.query, toCamelCase);
+    }
 
     return h.continue;
   });
