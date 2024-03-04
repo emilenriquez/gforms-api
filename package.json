@@ -12,6 +12,8 @@
   "scripts": {
     "start-dev": "NODE_ENV=development nodemon server",
     "start-production": "NODE_ENV=production PORT=3900 nodemon server",
+    "test:re-create-db": "PGPASSWORD=1234 dropdb -U test --if-exists gforms_api_test && echo 'test' && PGPASSWORD=1234 createdb -U test gforms_api_test",
+    "test": "yarn test:re-create-db && NODE_ENV=test PORT=3901 SECRET=holdmybeer lab lib -v -a code -I 'core,__core-js_shared__,regeneratorRuntime,_babelPolyfill' -L",
     "start": "node server",
     "lint": "eslint ."
   },
