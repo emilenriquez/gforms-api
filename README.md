@@ -6,6 +6,8 @@ API for a google form clone
 - yarn
 - node version lts/gallium as provided in the .nvmrc file
 
+## install packages
+ - yarn install
 
 
 ## Run migrations
